@@ -1,0 +1,42 @@
+name: Auto Qodo Commands POC
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+      - ready_for_review
+      - synchronize
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  comment-qodo:
+    if: "!contains(github.event.pull_request.labels.*.name, 'skip-qodo')"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Comment /describe
+        uses: peter-evans/create-or-update-comment@v5
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            /describe
+
+      - name: Comment /review
+        uses: peter-evans/create-or-update-comment@v5
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            /review
+
+      - name: Comment /improve
+        uses: peter-evans/create-or-update-comment@v5
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            /improve
