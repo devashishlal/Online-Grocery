@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/resetpwd.css">
+    <title>Reset password</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="reset-box">
+            <div class="logo">
+            </div>
+            <div class="reset-heading"><span>Reset password</span></div>
+            <form action="./login.html" onsubmit="return reset_validation()">
+                <div class="user-box">
+                <input type="password" id="reset-Npass" placeholder="new password" required></div>
+                <div class="pwd-box">
+                <input type="password" id="reset-Cpass" placeholder="confirm password" required></div>
+                <div class="btn-box"><button type="submit" id="reset-btn">Reset</button></div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>

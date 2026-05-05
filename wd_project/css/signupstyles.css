@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+header{
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: #DDF7E3  ;
+}
+
+.navMenu{
+    position: absolute;
+    top: 1.5%;
+    right: 2%;
+    text-transform: uppercase;
+
+}
+.navMenu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+.navMenu ul li a{
+    text-decoration: none;
+    color: green;
+    padding: 20px;
+}
+.navMenu ul li a:hover{
+    background-color: green;
+    color: aliceblue;
+}
+
+.signup-box{
+    position: relative;
+    height: 75vh;
+    width: 70vw;
+    background-color: aliceblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 2px 40px #635666;
+}
+.logo{
+    height: 75vh;
+    width: 35vw;
+    background-size: cover;
+    background-image: linear-gradient(to bottom left,
+     rgba(0, 128, 0, 0.100), 
+     rgba(89, 143, 71, 0.100)),
+     url(../images/backLogin.png);
+}
+.signup-heading{
+    position: absolute;
+    top: 5%;
+    left: 75%;
+    color: green;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: translate(-50%);
+}
+.fname-box{
+    position: absolute;
+    top: 25%;
+    left: 63%;
+    transform: translate(-50%);
+}
+
+#signup-fname{
+    outline: none;
+    padding: 6px 13px;
+    border: 1px solid green;
+}
+
+.lname-box{
+    position: absolute;
+    top: 25%;
+    left: 87%;
+    transform: translate(-50%);
+}
+
+#signup-lname{
+    outline: none;
+    padding: 6px 13px;
+    border: 1px solid green;
+}
+
+.email-box{
+    position: absolute;
+    top: 40%;
+    left: 63%;
+    transform: translate(-50%);
+}
+
+#signup-email{
+    outline: none;
+    padding: 6px 13px;
+    border: 1px solid green;
+}
+
+.dob-box{
+    position: absolute;
+    top: 40%;
+    left: 87%;
+    transform: translate(-50%);
+}
+
+#signup-dob{
+    color: green;
+    outline: none;
+    padding: 5px 15px;
+    width: 13.7vw;
+    border: 1px solid green;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.fpwd-box{
+    position: absolute;
+    top: 55%;
+    left: 87%;
+    transform: translate(-50%);
+}
+
+#signup-fpwd{
+    outline: none;
+    padding: 6px 13px;
+    border: 1px solid green;
+}
+.cpwd-box{
+    position: absolute;
+    top: 55%;
+    left: 63%;
+    transform: translate(-50%);
+}
+#signup-cpwd{
+    outline: none;
+    padding: 6px 13px;
+    border: 1px solid green;
+}
+
+.btn-box{
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%);
+}
+
+#signup-btn{
+    font-size: 17px;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    background-color: green;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+#login-btn a{
+    color: white;
+    text-decoration: none;
+}
+.create-account{
+    position: absolute;
+    top: 92%;
+    left: 60%;
+    font-size: 13px;
+}
+
+.create-account a{
+    text-decoration: none;
+    color: green;
+}

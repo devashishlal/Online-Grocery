@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Form - Online Grocery Store</title>
+    <link rel="stylesheet" href="grievance.css">
+
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Grievance Form</h1>
+        <form id="grievanceForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="orderId">Order ID</label>
+                <input type="text" id="orderId" name="orderId" required>
+            </div>
+            <div class="form-group">
+                <label for="orderDate">Order Date</label>
+                <input type="date" id="orderDate" name="orderDate" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category of Grievance</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="Product Quality">Product Quality</option>
+                    <option value="Delivery Issue">Delivery Issue</option>
+                    <option value="Payment Issue">Payment Issue</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description of Grievance</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fileUpload">Upload Supporting Document (optional)</label>
+                <input type="file" id="fileUpload" name="fileUpload" accept=".jpg,.jpeg,.png,.pdf">
+            </div>
+            <button type="submit">Submit Grievance</button>
+        </form>
+    </div>
+    <script src="grievance.js"></script>
+</body>
+</html>

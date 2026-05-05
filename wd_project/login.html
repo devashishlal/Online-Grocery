@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/loginstyles.css">
+    <title>Login Page</title>
+    <!-- <script src="./script.js"></script> -->
+    <script src="login.js"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="login-box">
+            <div class="logo">
+
+            </div>
+            <div class="login-heading"><span>Login</span></div>
+            <form action="./phome.html" onsubmit="return loginValidation()">
+                <div class="user-box">
+                <img src="./images/login.png">
+                <input type="text" id="login-username" placeholder="username" required></div>
+                <div class="pwd-box">
+                <img src="./images/password.png">
+                <input type="password" id="login-password" placeholder="password" required></div>
+                <div class="forget-pwd"><a href="./resetpwd.html">reset password?</a></div>
+                <div class="btn-box"><button type="submit" id="login-btn">login</button></div>
+                <div class="create-account">New user? <a href="./signup.html">Create an account</a></div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>

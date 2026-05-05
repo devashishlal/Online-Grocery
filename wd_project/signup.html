@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/signupstyles.css">
+    <title>Sign Up</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navMenu">
+            <ul>
+                <li><a href="phome.html">home</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">contact us</a></li>
+                <li><a href="#about">about us</a></li>
+            </ul>
+        </div>
+        <div class="signup-box">
+            <div class="logo">
+
+            </div>
+            <div class="signup-heading"><span>Sign Up</span></div>
+            <form action="./phome.html" onsubmit="return signup_validation()" method="post">
+                <div class="fname-box">
+                <input type="text" id="signup-fname" placeholder="First name" required></div>
+                <div class="lname-box">
+                <input type="text" id="signup-lname" placeholder="Last name" required></div>
+                <div class="email-box">
+                    <input type="email" id="signup-email" placeholder="Email" required>
+                </div>
+                <div class="dob-box">
+                    <input type="date" id="signup-dob" required>
+                </div>
+                <div class="fpwd-box">
+                    <input type="password" id="signup-fpwd" placeholder="Confirm password" required>
+                </div>
+                <div class="cpwd-box">
+                    <input type="password" id="signup-cpwd" placeholder="Password" required>
+                </div>
+                <div class="btn-box"><button type="submit" id="signup-btn">Sign Up</button></div>
+                <div class="create-account">Already have an account? <a href="./login.html">Sign in</a></div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
